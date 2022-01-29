@@ -1,0 +1,1171 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>HTML-Basic</title>
+    <meta charset="UTF-8"/>
+    <meta name="html-basic" content="Basic document for HTML"/> <!--it is called attributes--> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="keywords" content="HTML tutorial">
+    <meta name="description" content="Introduction to HTML">
+    <meta name="author" content="Jeet Patel">
+    <meta http-equiv="refresh" content="30">
+    <style>
+        table, th, td { border: 1px solid black;
+        border-spacing: 5px; 
+        }
+        
+        th, td {
+         padding: 10px; }
+        th,td{
+            text-align: center;}
+        #t01 tr:nth-child(even) {
+            background-color: #eee;}
+        #t01 tr:nth-child(odd) {
+            background-color: rgb(196, 218, 160); }
+        #t01 th {
+            background-color: black;
+            color: white;} 
+        
+        #t05 tr:nth-child(even) {
+            background-color: #eee;}
+        #t05 tr:nth-child(odd) {
+            background-color:lightgray;  }
+        #t05 th {
+            background-color: black;
+            color: white;}
+        
+        #t06 tr:nth-child(even) {
+            background-color: #eee;}
+        #t06 tr:nth-child(odd) {
+            background-color:lightgray;  }
+        #t06 th {
+            background-color: black;
+            color: white;}
+            
+        #t07 tr:nth-child(even) {
+            background-color: #eee;}
+        #t07 tr:nth-child(odd) {
+            background-color:lightgray;  }
+        #t07 th {
+            background-color: black;
+            color: white;}
+        
+        
+        
+    </style> <!--padding and border part--> 
+
+</head>
+<body style="background-color:floralwhite; font-family:'Courier New', Courier, monospace; ">
+
+        
+        <!--<a href="https://www.mikedane.com/web-development/html/" target="_blank">REFERRED WEBSITE</a> <br>--> 
+        
+        <b><h1 style="text-align: center; background-color:black;color: white;font-size: 250%;">HTML DOCUMENT</h1></b>
+        <b><h3 style="text-align: center;">By <br>JEET PATEL</h3></b>
+        <b><h3 style="color:white;background-color: black; text-align:center;font-size: 175%;">INDEX</h3></b>
+        <fieldset style="background-color: cornsilk; width: max-content;" >
+        <b>
+        <ol type="1">
+            <label><h3>Table of Content:</h3></label>
+            <li><a href="#cont_link">CONTAINER and NON-CONTAINER</a></li>
+            <li><a href="#tags_link">BASIC TAGS</a></li>
+            <li><a href="#style_link">STYLE AND COLOR</a></li>
+            <li><a href="#format_link">FORMATTING THE TEXT</a></li>
+            <li><a href="#video_link">LINKS,VIDEO and IMAGES</a></li>
+            <li><a href="#list_link">LISTS</a></li>
+            <li><a href="#tables_link">TABLES</a></li>
+            <li><a href="#divspan_link">DIVS and SPANS</a></li>
+            <li>
+                <a href="#iframes_link">iFRAMES</a></li>
+            <li>
+                <a href="#input_link">INPUTS</a>
+                <ul>
+                    <li> <a href="#input_link">INPUT ELEMENT</a></li>
+                    <li> <a href="#inputatt_link">INPUT ATTRIBUTES</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#form_link">FORMS</a>
+                <ul>
+                    <li><a href="#formele_link">FORM ELEMENTS</a></li>
+                    <li><a href="#form_att_link">FORM ATTRIBUTES</a></li>
+                </ul>
+            </li>
+            <li><a href="#meta_link"> META TAGS</a></li>
+        </fieldset> 
+
+
+
+
+        </ol>
+        </b>
+
+    
+<hr>
+        <section>
+            <b>DOCTYPE html:</b> This is the DOCTYPE declaration. It’s actually not technically an HTML tag, rather it’s a declaration which tells the web browser what type of file this is.The browser will see this and know to treat the file as HTML document.
+            
+            <p> <b><h3 style="text-align: center;color: white;background-color: black; font-size: 175%;"><a id="cont_link">CONTAINER and NON-CONTAINER</a></h3></b> </p>
+             <p><b>NON-CONTAINER TAGS</b>- These are tags which don’t have a starting and an ending component, instead they’re just a single structure.<br> These tags will have a forward slash right next to the greater-than sign on the right.<br></p>
+             <p><b>CONTAINER TAGS</b>- Container Tags are comprised of two tags that go together, an opening and a closing tag<br>
+            <b><list>head tag</b>- The head tags are basically the settings for your HTML document. In here we can place all sorts of special tags which will help to configure and provide meta-data about the html document itself.<br> These specify the name of the webpage, and whatever is in here will show up in the tab of the page.<br>
+            <b>body tag</b>- It’s inside of these tags that we’ll place all of the content that is meant to appear on the web-page.<br>
+            <b> title tag </b>: These specify the name of the webpage, and whatever is in here will show up in the tab of the page.
+            <br><img src ="base.jpg" alt="Example" style="height:200px;">
+        </p>
+        </section>
+        <hr>
+
+        <section>
+        <p>
+            <h3 style="text-align: center;color:white;background-color:black ;font-size: 175%;"><a id="tags_link">BASIC TAGS</a></h3>
+            <b>Meta Tags(Non-Container Tags):</b>Meta tags are used in the head of the website to provide meta data to the browser as well as other applications like web scrapers. You can use meta tags to add a description, author, date of publication, keywords, etc, to the meta data of your site.
+            <br><img src="meta_tag.jpg" alt="Meta-Tag Example" style="height:200px;">
+            <br>We can add information to a tag like so: name="description" or charset="UTF8". These little key value pairs are called <b><i>attributes</i></b> and they provide input into an HTML tag with more information about what it’s doing. There are hundreds of these attributes, and in the case of the meta tags, they’re specifying different pieces of meta information.<br>
+            <br><b>Headers(Container Tags):</b>In all there are 6 different types of headers we can use h1,h2,...,h6. As the numbers get smaller so does the text that they display.<br>
+            <br><b>Text Formatter(Container Tag):</b>
+            <br><img src="text_format.jpg" alt="Text-Formatter Example" style="height:200px;">
+            <hr>
+        </p>
+         </section>      
+            <!--commenting the statement-->
+
+        <section>
+        <p>
+            <h3 style="color:white;background-color: black;text-align: center"><a id="style_link">STYLE AND COLOR</a></h3>
+            <b>Changing Text Colors</b><br>
+            <img src="style color.jpg" alt="Example of style and colour" style="height:50px ;">
+            <br>We’ve added the <font color="blue" ><b> style </b></font> attribute. Inside I’ve defined that the color of the text should be blue. This is actually a CSS statement. CSS statement’s allows us to change certain stylistic aspects of the HTML element.<br>
+            <br><b>Background Color</b>
+            <br><img src="background.jpg" alt="Example of background color" style="height:50px ;"><br>
+            <br><b>Nesting Styles</b>
+            <br><img src="eg-style.jpg" alt="Example of Nesting Style" style="height:300px ;">
+            <br><img src="style_summary.jpg"style="height: 150px;">
+        </p> 
+        </section>  
+        <hr>
+
+        <!--                                                           FORMATTING THE TEXT                       -->
+        <section>
+            <p>
+            <h3 style="color: white;background-color: black;text-align: center;"><a id="format_link">FORMATTING THE TEXT</a></h3>
+            FORMAT OF TEXT<br><img src="format.jpg" alt="Example of Formatting the Text" style="height:450px;">
+            <br>It’s important to note that these tags don’t actually change the format or the styling of the content inside. Instead they act as descriptors and containers which indicate the type of content inside of them.Websites which rank highly on keyword searches often use tags like this for organization. As a general rule, the more descriptive and clear the HTML on your page is, the easier it will be for search engines to understand it.<br>
+            <br>
+            <b>
+            <table width="50%" id="t06">
+                <caption> HTML Formatting element</caption>
+                <tr>
+                    <th>Tags</th>
+                    <th>Description</th>
+                </tr>
+                
+                <tr>
+                    <td>< b ></td>
+                    <td>Bold Text</td>
+                </tr>
+                <tr>
+                    <td>< strong ></td>
+                    <td>Important Text</td>
+                </tr>
+                <tr>
+                    <td>< i ></td>
+                    <td>Italic Text</td>
+                </tr>
+                <tr>
+                    <td>< em ></td>
+                    <td>Emphasized Text</td>
+                </tr>
+                <tr>
+                    <td>< mark ></td>
+                    <td>Marked Text(text that we want highlighted)</td>
+                </tr>
+                <tr>
+                    <td>< small ></td>
+                    <td>Smaller Text</td>
+                </tr>
+                <tr>
+                    <td>< ins ></td>
+                    <td>Inserted Text</td>
+                </tr>
+                <tr>
+                    <td>< sub ></td>
+                    <td>Subscript Text</td>
+                </tr>
+                <tr>
+                    <td>< sup ></td>
+                    <td>Superscript Text</td>
+                </tr>
+                
+            </table></b>
+            <br><b>Header Part:</b>Generally reserved for content that will sit at the top of a webpage. This will include a series of links to common pages on the site, and often times interactive elements like a search bar or settings menu.<br>
+            Inside Header tag we generally use <font color="red">nav (navigation tag).</font><br>
+            <br><b>Nav Tag:</b>Generally reserved for content that will sit at the top of a webpage.This will include a series of links to common pages on the site, and often times interactive elements like a search bar or settings menu.Mostly link are placed inside the nav tags ,which allow you to link to other content on your site.<br>
+            <br><b>Main tag:</b>Main section indicates where all the main content of the site will live.The main sections is where most of the interaction on the site will take place, and where the user’s attention will be directed most of the time. Therefore when laying out a website, the main should have the most content inside of it.
+            <br>All of this text that you’re reading, the video embedded up above, and the side bar with navigation links is all part of the main section of the website. Search engines will generally be looking in the main section of your website to learn what your page is about and what content is unique to this page in particular.<br>
+            There are <a href="https://www.mikedane.com/web-development/html/formatting-a-page/" target="_blank">SECTION,ARTICLE,ASIDE</a>,  tags that can be used for FORMATTING THE TEXT<br>
+            <br><b>ASIDE TAG:</b>  The aside tag is used for any content which is not part of the main content of your page.This let’s things like search engines know that it doesn’t belong as part of the article or normal main content.For eg.ads appearing on the website will go onto aside.<br>
+            <b>ARTICLE TAG</b>: We can use the special <font color="red">Article tag</font> to indicate if something is an article. Again this is really useful for search engines because they can tell exactly where the article content is and more easily index it.
+            <br><b>FOOTER :</b> The footer of the tags is similar to header  in that it generally stores links to common pages on the site and also branding information.
+            <br><br><b>
+                <table width="70%" id="t07">
+                    <caption>HTML Quotation and Citation Elements</caption>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>< abbr ></td>
+                        <td>Defiens an abbreviation or acronym</td>
+                    </tr>
+                    <tr>
+                        <td>< address ></td>
+                        <td>Defiens contact informationfor the author/owner of a document</td>
+                    </tr>
+                    <tr>
+                        <td>< bdo ></td>
+                        <td>Defines the text direction</td>
+                    </tr>
+                    <tr>
+                        <td>< blockquote ></td>
+                        <td>Defines a section that is quoted from another source</td>
+                    </tr>
+                    <tr>
+                        <td>< cite ></td>
+                        <td>Defines the title of a work</td>
+                    </tr>
+                    <tr>
+                        <td>< q ></td>
+                        <td>Define a short inline quotation</td>
+                    </tr>
+                </table>
+        </p>
+            <hr>
+        </section>
+
+        <!--                                                           LINKS,VIDEO AND IMAGES                       -->
+        <section>
+            <p>
+                <b><h3 style="color: white;background-color: black;text-align: center;"><a id="video_link">LINKS,VIDEOS and <a id="images_link">IMAGES</a></a></h3></b>
+                <br>OPENING OTHER WEBSITE IN NEW TAB :(Relative Link) <a href="RUCHIT_FILE.html" target="_blank">RUCHIT INTRODUCTION WEBSITE</a>
+                <br>OPENING NEW FILE:<a href="http://www.mikedane.com/databases/sql/erd-template.png" target="_blank">SQL Diagram </a><br>
+                <br>ADDING VIDEO FILES:<br><img src="video_eg.jpg" alt="ADDING VIDEO" style="height: 200;"> 
+                <video src="mov_bbb.mp4" controls  poster="example.jpg" width="450">
+            </p>
+        </section>
+        <hr>
+
+        <!--                                                           LIST                       -->
+
+        <section>
+            <p>
+                <b><h3 style="color:white;background-color: black; text-align:center;"><a id="list_link">LISTS</a></h3></b> 
+                There are three ways for specifying the lists:<b>ordered,unordered and description lists</b><br>
+                <br><strong>ORDERED LISTS:</strong>An ordered list can be created with the <b>ol</b> tag and each list item can be created with the <b>li </b>tag <br>
+                <img src="ol.jpg" alt="Format of writing ordered list">
+                <br>There are couple of ways we can use lists such that we can add numbers appearing on the list items in an ordered list.The first way is to set a starting number, using the start attribute. The list will start at this defined number, and continue incrementing by one as usual.
+                <br><b>For example:</b>
+                    <ol start="3">
+                    <li>Item</li>
+                    <li>Some Other Item</li>
+                    <li>Yet Another Item</li>
+                    </ol>
+                <img src="reversed ol.jpg"><br>
+                <hr>
+                <br><strong>UNORDERED LISTS:</strong>An unordered list can be created with the <b>ul</b> tag and each list item can be created with the <b>li</b> tag as shown by the example below:
+                <br><img src="ul.jpg" alt="Format of writing unordered list"style="height: 150px;"><br>
+                We should use ul to display a list of items, where the order of the items is not important. If changing the order of the items makes the list incorrect, you should use ol.<br>
+                <br><strong>NESTED LISTS:</strong><br>
+                <img src="nested_list.jpg" alt="nested list" style="height: 150px;"> 
+                <hr>
+                <br><strong>DESCRIPTIVE LISTS:</strong>A description list can be created with the <b>dl</b> element. It consists of name-value groups, where the name is given in the <b>dt</b> element, and the value is given in the <b>dd</b> element.
+                <br><img src="dd.jpg" style="height: 250px;">
+                <hr>
+            </p>
+        </section>
+
+        <!--                                                           TABLES                       -->
+
+        <section>
+            <p>
+                <b><h3 style="color:white;background-color: black; text-align:center;"><a id="tables_link">TABLES</a></h3></b>
+                The HTML <b><a href="https://www.w3schools.com/html/html_tables.asp"target="_blank">table</a></b> element allows web authors to display tabular data (such as text, images, links, other tables,etc.) in a two dimensional table with rows and columns of cells.
+                <br> Each table row is defined with a <b>tr</b> tag. Each table header is defined with a <b>th</b> tag. Each table data/cell is defined with a <b>td</b> tag. By default, the text in <b>th</b> elements are bold and centered. By default, the text in <b>td</b>elements are regular and left-aligned.
+                <p style="background-color:yellow;"><br><b>Note:</b> The <b>td</b> elements are the data containers of the table. They can contain all sorts of HTML elements;text,<a href="#images_link">images</a>, lists, other tables, etc.</p><br>
+                <b>Format of writing the TABLE:</b><br><img src="tables.jpg" style="height: 450px;">
+                <br>Table cells can span multiple columns or rows using the <b>colspan</b> and <b>rowspan</b> attributes. These attributes can be applied to th and td elements.
+                <br>Caption tag is used to add caption to the table.<br>
+                
+                <table style="width: 50%;">
+                    <caption><b><a href="table.jpg">Example of table(code):</a></b></caption>
+                    <tr>
+                        <th>NAME</th>
+                        <th>AGE</th>
+                    </tr>
+                    <tr>
+                        <td>jeet</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>aaryan</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>ruchit</td>
+                        <td>15</td>
+                    </tr>
+                </table>
+                <br><b>Border</b>:<br><img src="adding the border.jpg" style="height: 125px;"><br>
+                <br><b>Cell Pading:</b> Cell padding specifies the space between the cell content and its borders.If we do not specify a padding, the table cells will be displayed without padding.
+                <br><img src="padding.jpg" style="height: 75px;">
+                <br><b>Aligning the table:</b><br><img src="table_align.jpg" style="height: 75px;"><br>
+                <br><b style ="font-size: larger;">Special Style for Table:</b><br>To define a special style for one particular table, add an <b>id</b> attribute to the table
+                
+                <table style="width: 50%;"id="t01">
+                    <caption><b><a href="table_style.jpg" target="_blank">Example of styling the table:</a></b></caption>
+                    <tr>
+                        <th>Name</th>
+                        <th>Sapid</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>Jeet</td>
+                        <td>51</td>
+                        <td>SE</td>
+                    </tr>
+                    <tr>
+                        <td>Aaryan</td>
+                        <td>04</td>
+                        <td>SE</td>
+                    </tr>
+                    <tr>
+                        <td>Ruchit</td>
+                        <td>95</td>
+                        <td>BE</td>
+                    </tr>
+                 </table>
+                 <br><b>SUMMARY:</b><br><img src="summary_table.jpg" alt="SUMMARY OF TABLES" style="height: 250px;">
+            </p>
+        </section>
+        <hr>
+
+        <!--                                               DIVS AND SPANS                  -->
+        <section>
+            <p>
+                <b><h3 style="color:white;background-color: black; text-align:center;"><a id="divspan_link">DIVS and SPANS</a></h3></b>
+                <b><h3><a href="https://www.w3schools.com/html/html_blocks.asp" target="_blank">DIVS and SPANS</a></h3></b>
+                <table style="width:100% ;" >
+                    <tr>
+                        <th>DIVS</th>
+                        <th>SPANS</th>
+                    </tr>
+                    <tr>
+                        <th>The div element is often used as a container for other HTML elements.</th>
+                        <th>The span element is an inline container used to mark up a part of a <br>text, or a part of a document.</th>
+                    </tr>
+                    <tr>
+                    <th>The div element has no required attributes, but style, class and id are common.</th>
+                    <th>The span element has no required attributes, but style, class and id are common.</th>
+                    </tr>
+                </table>
+                <br><b><a href="div_code.jpg" target="_blank">EXAMPLE OF DIVS:</a></b>
+                <div style="background-color:tomato;color:white;padding:20px;">
+                    <h2>London</h2>
+                    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                </div> 
+                <br><b><a href="span_code.jpg" target="_blank">EXAMPLE OF SPANS:</a></b>
+                <h2>The span element</h2>
+                    <p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>
+
+                
+                <br>
+                <hr>
+                <br>
+                <h3>BLOCKS and INLINE </h3>
+                <table style="width: 100%;" >
+                    <tr>
+                        <th>BLOCK</th>
+                        <th>INLINE</th>
+                    </tr>
+                    <tr>
+                        <th> A div element is BLOCK-level element</th>
+                        <th> A span element is INLINE-level element</th>   
+                    </tr>
+                    <tr>
+                        <th>A block-level element always starts on a new line.</th>
+                        <th>An inline element does not start on a new line.</th>
+                    </tr>
+                    <tr>
+                        <th>A block-level element always takes up the full width available <br>(stretches out to the left and right as far as it can).</th>
+                        <th>An inline element only takes up as much width as necessary.</th>
+                    </tr>
+                    <tr>
+                        <th>A block level element has a top and a bottom margin</th>
+                        <th>Whereas an inline element does not.</th>
+                    </tr>
+                </table>
+                <br><b style="background-color: yellow;">Note: An inline element cannot contain a block-level element!</b><br>
+                <br><b>SUMMARY:</b><br><img src="summary_divspan.jpg" style="width: 680px;">
+            </p>
+        </section>
+
+        <!--                                                           IFRAMES                       -->
+        <section>
+            <p>
+                <b><h3 style="color:white;background-color: black; text-align:center;"><a id="iframes_link">iFrames</a></h3></b>
+                <br>The term <b>"IFrame"</b> means Inline Frame. It can be used to include another page in your page. This will yield a small frame which shows the exact contents of that field.<br>
+            
+            
+                <br><b style="font-size:larger">Format of writing iframe Code:</b><br><img src="iframe_code.jpg" width="770">
+                <br><b style="font-size: larger">Output:</b><br><iframe src="https://www.mikedane.com" height="350" width="400" 
+                title="Example of iframe" allowfullscreen 
+                style="border:2px solid red;"></iframe>
+                <br><b>BORDER:</b><br><img src="iframe_border.jpg" style="height: 130px;">
+                <hr>
+            </p>
+            <p>
+                <h2>Target for a Link</h2>
+                An iframe can be used as the target frame for a link. The target attribute of the link must refer to the name attribute of the iframe.<br>
+                <iframe srcdoc="EXAMPLE OF TARGET for a LINK" name="iframe_a" height="200px" width="500" title="Iframe Example" ></iframe>
+                <br><a href="https://www.mikedane.com" target="iframe_a"><b style="color:red;">Mike Dane Website</b></a>-click here
+                <br>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.<hr>
+            </p>
+
+            <p>    
+                <b><h3>srcdoc:</h3></b>The srcdoc attribute can be used (instead of the src attribute) to specify the exact contents of the iframe as a whole HTML document. This will yield an IFrame with the text "IFrames are cool!"
+                <br><iframe srcdoc="iframes are cool!"></iframe>
+                <br><b>Attributes used</b><br><img src="iframe_attributes.jpg">
+            </p>
+        </section>
+
+        <!--                                                           INPUTS                       -->
+
+        <section>
+            <p>
+                <b><h3 style="color:white;background-color: black; text-align:center;"><a id="input_link">INPUTS</a></h3></b>
+                <table width="100%" id="t05">
+                    <tr>
+                        <th>No.</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Baic Example</th>
+                    </tr>
+
+                    <tr><!--                                           TEXT                        -->
+                        <td width="3%">1</td>
+                        <td width="20%">Input type TEXT</td>
+                        <td width="50%"><b>input type="text"</b> Defines a single-line text input field.<br>The default width of a text field input is 20 characters.<br> This can be changed by specifying a value for the size attribute like this:<br><img src="input_text.jpg" height="40">
+                        <br>An input text field only allows one line of text. If you need a multi-line text input for substantial amount of text, use a  textarea element instead.<br><p style="color:red;"><b>Value</b> attribute helps us to set default value in the text field.</p>
+                        </td>
+                        <td width="27%">
+                        <div>
+                            <label>Name:</label><input type="text" id="fname" name="name" size="25" 
+                            placeholder="enter name "  >
+                        </div>
+                    </td>
+                    </tr>
+
+                    <tr><!--                                           PASSWORD                        -->
+                        <td width="3%">2</td>
+                        <td width="20%">Input type PASSWORD</td>
+                        <td width="50%">
+                        <form>
+                        <div>
+                            <b>input type="password"</b> defines a password field. It creates a single-line text field similar to the input type=text, except that text is not displayed as the user enters it.
+                            <br><img src="input_password .jpg" width="800"><br><p style="color: red;"><b>Placeholder</b> text is shown in plain text and is overwritten automatically.</p>
+                        </div>
+                        </form>
+                        </td>
+                        <td width="30%">
+                           <b> Enter your name</b><br><input type="text" size="30" name="name" id="fname" placeholder="enter your name">
+                            <br><b>Password</b><br><input type="password" size="30" name="pd" id="password" 
+                            placeholder="enter password" minlength="4" maxlength="8">  
+                        </td>
+                    </tr>
+
+                    <tr><!--                                           SUBMIT                        -->
+                        <td width="3%">3</td>
+                        <td>Input type SUBMIT</td>
+                        <td><b>input type="submit" </b>
+                            A submit input creates a button which submits the form it is inside when clicked.
+                            If value attribute is omitted than it will be taking a by default value of ‘Submit’.
+                        <br><img src="input_submit.jpg"></td>
+                        <td>
+                            <form>
+                                <b> Enter your name</b><br><input type="text" size="30" name="name" id="fname" placeholder="enter your name">
+                                <br><b>Password</b><br><input type="password" size="30" name="pd" id="password" 
+                                placeholder="enter password" minlength="4" maxlength="8"><br>
+                                <br><input type="submit" value="SUBMIT">
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr><!--                                           RESET                        -->
+                        <td width="3%">4</td>
+                        <td>Input type RESET</td>
+                        <td><b>input type="reset"</b> defines a reset button that will reset all form values to their default values. But, to make this reset button functional(data which is inside the form tag) we need to put all our code in form tag. The button will only reset the elements within this form.
+                        <br><img src="input_reset.jpg"></td>
+                        <td>
+                            <b> Enter your name</b><br><input type="text" size="30" name="name" id="fname" placeholder="enter your name">
+                            <br><b>Password</b><br><input type="password" size="30" name="pd" id="password" 
+                            placeholder="enter password" minlength="4" maxlength="8">
+                            <br><input type="submit" value="SUBMIT"><input type="reset" value="RESET">
+                        </td>
+                    </tr>
+
+                    <tr><!--                                            RADIO                                 -->
+                        <td width="3%">5</td>
+                        <td>Input type RADIO</td>
+                        <td><b>input type="radio"</b> defines a radio button. Radio buttons let a user select ONLY ONE of a limited number of choices.<br><img src="input_radio.jpg" height="80">
+                            <p style="color:red;">Value of name attribute should be same for a group of radio buttons.</p>
+                            To give context to the buttons and show users what each button is for, each of them should have a label. This can be done using a <b>label</b> element to wrap the button. Also, this makes the label clickable, so you select the corresponding button.
+                            <hr>To provide label for entire group we used <b>fieldset</b> and <b>legend</b> tags.<br><img src="input_radio_fieldset.jpg" width="570">
+                             
+                        
+                        </td>
+                        <td>
+                            <div>
+                                <label for="male">Male</label><input type="radio" name="gender" id="male" value="male"><br>
+                                <label for="female">Female</label><input type="radio" name="gender" id="female" value="female"><br>
+                                <label for="other">Other</label><input type="radio" name="gender" id="other" value="other">
+                            </div>
+                            <hr>
+                            <fieldset>
+                                <legend>Students name</legend>
+                                <label for="jeet">Jeet</label><input type="radio" name="names" id="jeet" value="male"><br>
+                                <label for="aaryan">Aaryan</label><input type="radio" name="names" id="aaryan" value="female"><br>
+                                <label for="ruchit">Ruchit</label><input type="radio" name="names" id="ruchit" value="other">
+                            </fieldset>
+                        </td>
+                    </tr>
+
+                    <tr><!--                                           CHECKBOX                        -->
+                        <td width="3%">6</td>
+                        <td>Input type CHECKBOX</td>
+                        <td><b>input type="checkbox"</b> defines a checkbox. Checkboxes let a user select ZERO or MORE options of a limited number of choices.<br><img src="input_checkbox.jpg" height="100"></td>
+                        <td>
+                            <div>
+                                <p>Fruits</p>
+                                <label for="apple">apple</label><input type="checkbox" name="apple" id="apple">
+                                <label for="banana">banana</label><input type="checkbox" name="banana" id="banana">
+                                <label for="orange">orange</label><input type="checkbox" name="oranges" id="orange">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr><!--                                           BUTTON                        -->
+                        <td width="3%">7</td>
+                        <td>Input type BUTTON</td>
+                        <td><b>Buttons</b> can be used for triggering actions to occur on the page, without submitting the form. Buttons are typically used with an "onclick" event.<br><img src="input_buuton.jpg"></td>
+                        <td>
+                            <button type="button" onclick="alert('dont touch me!')">Button</button>
+                        </td>
+                    </tr>
+
+                    <tr><!--                                           COLOR                        -->
+                        <td width="3%">8</td>
+                        <td>Input type COLOR</td>
+                        <td>The input element with a type attribute whose value is color creates a button-like control, with a color equal to the value of color attribute.<p style="color:red">Defaults to black if value is not specified or is an invalid hexadecimal format.</p>
+                         <img src="input_color.jpg" width="450">
+                        </td>
+                        <td>
+                            <div>
+                                Color Picker<br>
+                                <input type="color" name="Ecolor" id="Ecolor" value="colors"> 
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr><!--                                           DATE                        -->
+                        <td width="3%">9</td>
+                        <td>Input type DATE</td>
+                        <td>The <b>input type="date"</b>is used for input fields that should contain a date. You can also use the <b>min and max</b> attributes to add restrictions to dates.
+                        <br><img src="input_date.jpg" width="650"></td>
+                        <td>
+                            <div>
+                                <label for="edate">Enter the date</label>
+                                <input type="date" name="date" id="edate" value="dates" min="2019-01-01" max="2021-11-22">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr><!--                                           DATETIME-LOCAL                        -->
+                        <td width="3%">10</td>
+                        <td>Input type DATETIME-LOCAL</td>
+                        <td>input elements of type <b>datetime-local</b> create input controls that let the user easily enter both a date and a time, including the year, month, and day as well as the time in hours and minutes
+                        <br><img src="input_datetime.jpg" width="570"></td>
+                        <td>
+                            <div>
+                                <label for="birthda">Enter your birthday</label>
+                                <input type="datetime-local" name="datetime" id="birthdate" value="datetime">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr><!--                                           EMAIL                        -->
+                        <td width="3%">11</td>
+                        <td>Input type EMAIL</td>
+                        <td>input elements of type email are used to let the user enter and edit an <b>e-mail</b> address, or, if the multiple attribute is specified, a list of e-mail addresses.<br><img src="input_email.jpg" width="570"></td>
+                        <td>
+                            <div>
+                                <label for=e-mail>Enter your gmail</label>
+                                <input type="email" name="email" id="e-mail" placeholder="enter your email-id" 
+                                size="30" pattern=".+@gmail.com"><button tpype="submit">Submit</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr><!--                                           FILES                        -->
+                        <td width="3%">12</td>
+                        <td>Input type FILES</td>
+                        <td>input elements with <b>type="file"</b> let the user choose one or more files from their device storage.
+                        <br> <img src="input_file .jpg" width="400" ></td>
+                        <td>
+                            <div>
+                                <label for="file_">Choose the file:</label>
+                                <input type="file" id="file_" name="myfile">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr> <!--                                           MONTH                        -->
+                        <td width="3%">13</td>
+                        <td>Input type MONTH</td>
+                        <td> input elements of type <b>month</b> create input fields that let the user enter a month and year allowing a month and year to be easily entered. The value is a string whose value is in the format "YYYY-MM"
+                        <br><img src="input_month.jpg" width="450"></td>
+                        <td>
+                            <div>
+                                <label for="bmonth">Enter the month</label>
+                                <input type="month" name="month" id="bmonth" value="months" >
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr><!--                                           NUMBER                        -->
+                        <td width="3%">14</td>
+                        <td>Input type <b>tel</b> and<b> number</b></td>
+                        <td>
+                            <b>Input tel</b>: elements of type tel are used to let the user enter and edit a telephone number.<br>
+                            <b>Input number:</b> elements of type number are used to let the user enter a number. They include built-in validation to reject non-numerical entries
+                            <br><img src="input_num.jpg" width="650">
+                        </td>
+                        <td>
+                            <div>
+                                <label for='num'> Enter your Phone Number</label>
+                                <input type="tel" id="num" name="number" placeholder="enter phone number" maxlength="10"><br>
+                                <label for='num'> Enter your any Number(1 to 5)</label>
+                                <input type="number" id="num" name="number" placeholder="enter any number"  min="1" max="4">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr><!--                                           RANGE                        -->
+                        <td width="3%">15</td>
+                        <td>Input type RANGE</td>
+                        <td>input elements of type <b>range</b> let the user specify a numeric value which must be no less than a given value, and no more than another given value.
+                        Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the min, max, and step attributes.
+                        <br><img src="input_range.jpg" width="400"> <br> <img src="attribute_input_range.jpg" width="400"></td>
+                        <td>
+                            <div>
+                                <lable>Volume</lable>
+                                <input type="range" min="1" max="50" step="5" >
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr><!--                                           SEARCH                        -->
+                        <td width="3%">16</td>
+                        <td>Input type SEARCH</td>
+                        <td>input elements of type <b>search</b> are text fields designed for the user to enter search queries into <br><img src="input_search.jpg" width="570"></td>
+                        <td>
+                            <div>
+                                <label for="Esearch">Search</label>
+                                <input type="search" id="Esearch" name="search" placeholder="Search here">
+                                <button type="submit">Submit</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr><!--                                           IMAGE                        -->
+                        <td width="3%">17</td>
+                        <td>Input type IMAGE</td>
+                        <td>input elements of type image are used to create graphical submit buttons, i.e. submit buttons that take the form of an image rather than text.
+                        <br><img src="input_images.jpg" width="550">
+                        </td>
+                        <td>
+                            <div>
+                                <label>Enter your name:<input type="text" ></label><br>
+                                <label>Login:<input type="image" src="download.jpg" height="20"></label>
+                                
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr><!--                                           TIME                        -->
+                        <td width="3%">18</td>
+                        <td>Input type TIME</td>
+                        <td>input elements of type time create input fields designed to let the user easily enter a time (hours and minutes, and optionally seconds).
+                            <br><img src="input_time.jpg">
+                        </td>
+                        <td>
+                            <div>
+                                <label for="TIME"> Select time </label>
+                                <input type="time" name="time" id="TIME">
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr><!--                                           URL                        -->
+                        <td width="3%">19</td>
+                        <td>Input type URL</td>
+                        <td> input elements of type url are used to let the user enter and edit a URL.
+                        <img src="input_url.jpg" width="570">
+                        </td>
+                        <td>
+                            <div>
+                                <label for="page"> Enter url</label>
+                                <input type="url" id="page" name="homepage" placeholder="enter your url">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr><!--                                           WEEK                        -->
+                        <td width="3%">20</td>
+                        <td>Input type week</td>
+                        <td>The input type="week" allows the user to select a week and year.
+                            <br><img src="input_week.jpg" width="370">
+                        </td>
+                        <td>
+                            <div>
+                                <label for="WEEK"> Select week</label>
+                                <input type="week" id="WEEK"  name="week">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </p>
+        </section>
+
+
+        <section><!--                    INPUT ATTRIBUTES                            -->
+            <b><h3 style="color:white;background-color: black; text-align:center;"><a id="inputatt_link">INPUTS ATTRIBUTES</a></h3></b>
+            <br>There are different types of <b>attribute</b> for <a href="#input_link"><b>input</b></a> tags
+            
+            <ol type="1">
+                <li>
+                    <div>
+                        <b style="font-size: larger;"><u>Value Attribute:</u></b><br> <!--                  VALUES       -->
+                        The input value attribute specifies an initial value for an input field. The value attribute is always optional, 
+                        though should be considered mandatory for <b style="color: red;">checkbox, radio and hidden.</b><br>
+                        Input types: <b>all</b>
+                    </div>
+                </li>
+                
+                <hr>
+                <br>
+                <li>
+                    <div><!--                       READONLY-->
+                        <b style="font-size: larger;"><u>Readonly Attribute:</u></b><br>
+                        The input readonly attribute specifies that an input field is read-only. A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it).<br >
+                        <br>The required attribute is supported by <b  style="color: red;">text, search, url, tel, email, date, month, week, time, datetime-local, number, password, checkbox, radio,file inputs etc.</b>
+
+                        <br><img src="attribute_readonly.jpg" height="30">
+                        <br>
+                        <br><div><label><b>Example of readonly attribute:</b></label><input type="text" readonly value="enter your name"></div>
+                    </div>
+                </li>
+                <hr>
+
+                <br>
+                <li><!--                DISABLED-->
+                    <b style="font-size: larger;"><u>Disabled Attribute:</u></b><br>The Boolean <b>disabled</b> attribute, when present, makes the element not <b>mutable, focusable, or even submitted with the form.</b> The user can neither <b>edit nor focus</b> on the control,
+                     nor its form control descendants. If the disabled attribute is specified on a form control, the element and its form control descendants do not participate in constraint validation. Often browsers 
+                     grey out such controls and it won't receive any browsing events,like mouse clicks or focus-related ones.<br>
+                     Input types: <b style="color: red;">all</b><br>
+                     <br><img src="attribute_disabled.jpg" width="570"><br>
+                     <br>
+                     <fieldset style="width:max-content;">
+                         <legend> Example  of disabled attribute</legend>
+                         <label for="dis"> Enter your name:</label>
+                         <input type="text" name="dname" id="dis" disabled value="Johnny"><br>
+                          <br><label for="disname">Enter your sirname:</label>
+                         <input type="text" name="sname" id="disname">
+                         <button type="submit">Submit</button>
+                     </fieldset>
+                     
+                </li>
+                <hr>
+                <br>
+                <li><!--                SIZE     -->
+                    <b style="font-size: larger;"><u>Size Attribute</u></b>:<br> The input size attribute specifies the visible width, in characters, of an input field. The default value for size is 20.
+                     For password and text, it is a number of characters (or em units) with a default value of 20, and for others, it is pixels.
+                     <br><b style="color: red;">By adding size on some input types, the width of the input can be controlled. Adding size on a select changes the height, definining how many options are visible in the closed state</b><br>
+                    Input type:<b style="color: red;">all</b>
+                    <br><img src="attribute_size.jpg" width="580">
+                    <br>
+                    <br>
+                    <fieldset style="width: max-content;">
+                        <legend><b>Example of size attribute</b></legend>
+                        <label for="texts">Enter any thing:</label>
+                        <input type="text" name="stext" id="texts" size="20" placeholder="default size 20"><br>
+                        <label for="texts">Enter any text:</label>
+                        <input type="text" name="stext" id="texts" size="30" placeholder=" size 30">
+                    </fielset>     
+                </li>
+                <hr>
+                <br>
+                <li><!--                              MAXLENGTH and MINLENGTH     -->
+                    <b style="font-size: larger;"><u>Maxlength and Minlength Attribute</u></b><br>
+                    <br><b><u>Maxlength</u></b>:The maxlength attribute defines the maximum number of characters (as UTF-16 code units) the user can enter into an <b><a href="#input_link">input or textarea.</a></b> This must be an integer value 0 or higher. If no maxlength is specified, or an invalid value is specified, the input or textarea has no maximum length.
+                    <br><b><u>Minlength</u></b>:The minlength attribute defines the minimum number of characters (as UTF-16 code units) the user can enter into an <b>input or textarea.</b> This must be an integer value 0 or higher. If no minlength is specified, or an invalid value is specified, the input has no minimum length. This value must be less than or equal to the value of maxlength, otherwise the value will never be valid, as it is impossible to meet both criteria.
+                    <br><br> Input type:<b style="color: red;">text,search,tel,url and password</b>
+                    <br><img src="attribute_maxminlength.jpg" width="750"><br>
+                    <fieldset style="width: max-content;">
+                        <legend>Example of maxlength and minlength</legend>
+                        <label>Enter your password:</label>
+                        <input type="password" name="mpassword" id="ps" minlength="4" maxlength="8" placeholder="enter your password">
+                        <button type="submit"> Submit</button>
+                    </fieldset>
+                    <hr><br>
+                </li>
+
+                <li><!--                                    MAX and MIN-->
+                    <b style="font-size: larger;"><u>Max and Min Attribute</u></b>:The input min and max attributes specify the minimum and maximum values for an input field. 
+                    <br><b style="color: red;">Tip: Use the max and min attributes together to create a range of legal values.</b>
+                    <br><br><b>Input types and there format</b> :<b style="color: red;"> number, range, date, datetime-local, month, time and week.</b>
+                    <img src="attribute_maxmin.jpg" height="400"><br>
+                    <img src="attribute_minmax_code.jpg" height="80">
+                    <div>
+                        <label for="adate">Enter the date</label>
+                        <input type="date" name="date" id="adate" value="dates" min="2019-01-01" max="2021-11-22">
+                    </div>
+                </li><hr><br>
+
+                <li>
+                    <b style="font-size: larger;">Multiple Attribute</b>:<br>The input multiple attribute specifies that the user is allowed to enter more than one value in an input field. 
+                    <b><br>Input types:</b> <b style="color: red;">Email and File</b>
+                    <br><br><img src="attribute_multiple.jpg">
+                    <fieldset style="width: max-content;">
+                        <legend> <b>Example of multiple</b></legend>
+                        <label for="afile"> Choose multiple file:</label><input type="file" id="afile" multiple>
+                    </fieldset>
+                </li>
+                <hr>
+                <br>
+                <li>
+                    <b style="font-size: larger;">Placeholder Attribute</b>:<br>The input placeholder attribute specifies a short hint that describes the expected value of an input field (a sample value or a short description of the expected format). The short hint is displayed in the input field before the user enters a value.
+                    <br> <b>Input types:</b> <b style="color:red;">Text, search, url, tel, email, and password</b><br>
+                    <br><img src="attribute_placeholder.jpg">
+                    <br><fieldset style="width: max-content;">
+                        <legend><b>Example of placeholder</b></legend>
+                        <label for="atext"> Enter your name</label><input type="text" id="atext" placeholder="enter your name">
+                    </fieldset>
+                </li><hr><br>
+                <li>
+                    <b style="font-size: larger;">Required Attribute</b>:<br>The input required attribute specifies that an input field must be filled out before submitting the form.
+                    <br><b>Input types:</b> <b style="color: red;">Text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.</b><br>
+                    <br><img src="attribute_required.jpg" width="580"><br><br>
+                    <form>
+                        <fieldset style="width: max-content;">
+                            <legend><b>Example of required attribue</b></legend>
+                            <label for="ftext"> Enter your fathers name</label>
+                            <input type="text" id="ftext" name="fname" required placeholder="NAME" >
+                            <button type="submit">Submit</button>
+                        </fieldset>
+                    </form>
+                </li>
+                <hr><br>
+                <li>
+                    <b style="font-size: larger;">Height and Width Attribute</b>:<br>The input height and width attributes specify the height and width of an <b>input type="image"</b> element. 
+                    <br><b style="background-color: yellow;">TIP: Always specify both the height and width attributes for images. If height and width are set, the space required for the image is reserved when the page is loaded. Without these attributes, the browser does not know the size of the image, and cannot reserve the appropriate space to it. The effect will be that the page layout will change during loading (while the images load).</b>
+                    <br><b>Input types:</b> <b style="color: red;">Image</b>
+                </li><hr><br>
+
+                <li>
+                    <b style="font-size: larger;">List Attribute</b>:The input list attribute refers to a <b>datalist</b> element that contains pre-defined options for an <b><a href="#input_link">input</a></b> element. The value given to the list attribute should be the id of a datalist element located in the same document The datalist provides a list of predefined values to suggest to the user for this input.
+                    <br><b>Input types:</b> <b style="color: red;">text, search, url, tel, email, date, month, week, time, datetime-local, number, range and color.</b>
+                    <br><br><img src="attribute_datalist.jpg"><br>
+                    <form >
+                        <label for="color">Example of list(datalist):</label>
+                        <input list="color" name="color">
+                        <datalist id="color">
+                          <option value="red ">
+                          <option value="black">
+                          <option value="blue">
+                          <option value="yellow">
+                          <option value="white">
+                        </datalist>
+                        <input type="submit" value="Submit">
+                      </form>
+                </li>
+            </ol>
+        </section>
+
+        <section><!--                                             FORM                              -->
+            <b><h3 style="color:white;background-color: black; text-align:center;"><a id="form_link">FORM</a></h3></b>
+            <br>An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+            <b><h3 style="color:black;background-color:slategrey; text-align:center;"><a id="formele_link">FORM ELEMENT</a></h3></b>
+            <br>The HTML <b>form</b> element is used to create an HTML form for user input. The <b>form</b> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc. HTML uses a form element to encapsulate input and submission elements. These forms handle sending the data in the specified method to a page handled by a server or handler.
+            <br><img src="form.jpg">
+            <form>
+               <!--                                  FORM ELEMENTS--> 
+            </form>
+            <br><b style="color: black;">There are different form attributes for eg. action, method, etc. which are used regarding form submission and how our form behaves, which will be discussed in further sub-sections of this chapter.</b>
+            <ol type="a">
+                <li><!--                            Label Element   -->
+                    <h3><u>Label element</u></h3>  
+                    The <b>label</b> tag defines a label for many form elements. The <b>label</b> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element. 
+                    You can click the associated label to focus/activate the input, as well as the input itself. This increased hit area provides an advantage to anyone trying to activate the input, including those using a touch-screen device. This makes an ease for the user to click on small regions such as radio buttons or checkboxes. Well, it can be used with any of the input type and many other form elements. 
+                    <br><b style="background-color: yellow;">NOTE: The <b style="color: red;">for</b> attribute of the <b>label</b> tag should be equal to the <b style="color: red;">id</b> attribute of the input element to bind them together.</b>
+                </li>
+                <hr>
+                <li><!--                          Select elemet                   -->
+                    <h3><u>Select element</u></h3>
+                    The <b>select</b> element defines a drop-down list.
+                    <p> The <b>option</b> elements defines an option that can be selected. By default, the first item in the drop-down list is selected. To define a pre-selected option, add the selected attribute to the option. Use the <b>size</b> attribute to specify the number of visible values. Use the <b>multiple</b> attribute to allow the user to select more than one value.</p>
+                    <img src="form_select.jpg"  width="500">
+                    <br>
+                    <form>
+                        <label for="movie">Your favourite movie:</label>
+                        <select id="movie" size="3" multiple>
+                            <option value="La casa da paple">Money Heist</option>
+                            <option value="last ship">The Last Ship</option>
+                            <option value="you">YOU</option>
+                            <option value="mr.robot">"Mr.Robot"</option>
+                        </select>
+                        <input type="submit">
+                    </form>
+                </li>
+                <hr>
+                <li>
+                    <h3><u>Textarea element</u></h3>
+                    The HTML <b>textarea</b> element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.<br><br>
+                    Certain key points regarding textarea are as follows:
+                    <ol>
+                        <li>An <b>‘id’</b> attribute allow the <b>textarea</b> to be associated with a <b>label</b> element for accessibility purposes.</li>
+                        <li>A <b>‘name’</b> attribute to set the name of the associated data point submitted to the server when the form is submitted.</li>
+                        <li>The <b>‘rows’ and ‘cols’</b> attributes to allow you to specify an exact size for the <b>textarea</b> to take. Setting these is a good idea for consistency, as browser defaults can differ.</li>
+                        <li> <b>Default</b> content can be entered between the opening and closing tags of textarea.</li>
+                        <li><b>Textarea does not support the ‘value’ attribute.</b></li>
+                        <li>The <b>textarea</b> element also accepts several attributes comon to form <b>input's</b> such as <b>autocomplete, autofocus, disabled, placeholder, readonly and required.</b></li>
+                    </ol>
+                    <br><img src="form_textare.jpg">
+                    <form>
+                        <label for="bio">Enter something about you</label><br>
+                        <textarea id="bio" name="bio" cols="30" rows="10" placeholder="enter your bio"></textarea>
+                        <textarea id="bio" name="bio" cols="30" rows="10" placeholder="enter your bio(disabled)" disabled></textarea>
+                        <br><button type="submit">Submit</button>
+                    </form>
+                </li><hr>
+                <li>
+                    <h3><u>Button Element</u></h3><!--                          BUTTON ELEMENT-->
+                    The <b>HTML button element</b> representsa clickablebutton, used to submit forms or anywhere in a documnet for accesible, standard button functionality.<br>
+                    <b style="background-color: yellow;">NOTE: Always specify the type attribute for the button element. Different browsers may use different default types for the button element.</b>
+                    <br><br><img src="form_button.jpg">
+                    <br>
+                    <form>
+                        <label><b>Button element</b></label>
+                        <button type="button" onclick="alert('EXAMPLE OF BUTTON')"> CLICK HERE</button>
+                    </form>
+                 </li>
+                 <hr>
+
+                 <li>
+                    <h3><u>Fieldset and Legend element</u></h3>
+                    The <b>fieldset</b> element is used to group related data in a form. The <b>legend</b> element defines a title for the <b>fieldset</b> element
+                   <br><br><img src="form_fieldset.jpg"><br><br>
+
+                    <fieldset style="width: max-content;">
+                        <legend><b>Example of required fielset element</b></legend>
+                        <label for="ltext"> Enter your  name</label>
+                        <input type="text" id="ltext" name="lname" placeholder="NAME" >
+
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                 </li><hr>
+
+                 <li>
+                     <h3><u>Datalist element</u></h3>
+                     The <b>datalist</b> element specifies a list of pre-defined options for an <b>input</b> element. Users will see a drop-down list of the pre-defined options as they input data.
+                    The <b>datalist</b> needs to given an <b style="color:red ;">id</b> .The datalist is then bound to an <b>input</b> element (e.g. a text or email input type) using the list attribute, the value of which is the id of the <b>datalist</b> to bind.
+                    <p>Datalist basically is a normal text field which also gives suggestions to the user whether if he/she wants to select any of the options provided or else wants to add their own text in it.</p>
+                    <br><img src="form_datalist.jpg" width="500">
+                    <form>
+                        <fieldset style="width: max-content;">
+                            <legend> Example of datalist</legend>
+                            <label for="mycar">favourite car </label>
+                            <input type="text" name="car" id="mycar" list="fcar">
+                            <datalist id="fcar">
+                                <option>BMW</option>
+                                <option>AUDI</option>
+                                <option>PORSCHE</option>
+                                <option>MERCEDES</option>
+                            </datalist>
+                        </fieldset>
+                    </form>
+                    <br><h3>Difference between SELECT and DATALIST element</h3>
+                    <ol type="i">
+                        
+                        <li>Select is an form input type while Datalist isn’t.</li>
+                        <li>Select input element presents options for the users from which they need to select one of them. On the otherhand,
+                             Datalist presents a list of suggested values to the associated input form (text) field and users are free to 
+                             select one of those suggested values or type in their own value.</li>
+                        <li>With Select, users may have to scan a long list for selecting one of the values, while with Datalist, the values are provided as hints and users ain’t bound to those values. They could rather provide their own inputs.</li>
+                     </ol>
+                 </li><hr>
+
+                 <li>
+                    <h3><u>Output element</u></h3>
+                    The HTML Output element <b>output</b> is a <a href="#cont_link" style="color: black;">container</a> element into which a site or app can inject the results of a calculation or the outcome of a user action.
+                    <br><br><img src="form_output.jpg"><br>
+                    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                        0
+                        <input type="range" id="a" name="a" value="50">
+                        100+
+                        <input type="number" id="b" name="b" value="50">
+                        =
+                        <output name="x" for="a b"></output>
+                        <br><br>
+                        <input type="submit">
+                
+                </li>
+             </ol>
+        </section>
+
+        <section>
+            <b><h3 style="color:white;background-color: black; text-align:center;"><a id="form_att_link">FORM ATTRIBUTES</a></h3></b>
+            
+            <fieldset width="max-content"><!--                     ACTION        -->
+                <legend ><b><h3>1.Action Attribute</h3></b></legend>
+                The <b>action</b> attribute defines the <b>action to be performed when the form is submitted</b>, which usually leads to a script that collects the information submitted and works with it. Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+                <br><br><b style="background-color: yellow;"><b>Note:</b> If the <b> action</b> attributeis omitted, the action is set to the current page.</b>
+            </fieldset>
+            <br>
+            <fieldset width="max-content">
+                <legend ><b><h3>2.Method Attribute</h3></b></legend>
+                The <b>method</b> attribute defines how data is sent. <br>The method attribute specifies the HTTP method to be used when submitting the form data.
+                <br>The form-data can be sent as URL variables <b style="color: red;">(with method="get")</b> or as HTTP post transaction <b style="color:red">(with method="post")</b>.
+                <img src="form_getpost.jpg" width="500">
+                <br>
+                <h4>GET method:</h4>The GET method is mostly used to get data, for example to receive a post by its ID or name, or to submit a search query. The GET method will append the form data to the URL specified in the action attribute. 
+                <br>The GET method is the method used by the browser to ask the server to send back a given resource: "Hey server, I want to get this resource." In this case, the browser sends an empty body. Because the body is empty, if a form is sent using this method the data sent to the server is appended to the URL.
+                <ul style="color: red;">
+                    <li>Appends the form data to the URL, in name/value pairs</li>
+                    <li>NEVER use GET to send sensitive data! <b>(the submitted form data is visible in the URL!)</b></li>
+                    <li>The length of a URL is limited (2048 characters)</li>
+                    <li>Useful for form submission where auser wants to bookmark the result</li>
+                    <li> GET is good for non-secure data, like query strings in Google</li>
+                </ul>
+                <img src="form_get.jpg">
+                <br><br>
+                <h4>POST method:</h4>The POST method is a little different. It's the method the browser uses to talk to the server when asking for a response that takes into account the data provided in the body of the HTTP request: "Hey server, take a look at this data and send me back an appropriate result." If a form is sent using this method, the data is appended to the body of the HTTP request
+                <ul style="color: red;">
+                    <li>Appends the form data inside the body of the HTTP request <b>(the submitted form data is not shown in the URL)</b></li>
+                    <li>POST has no size limitations, and can be used to send large amounts of data.</li>
+                    <li>Form submissions with POST cannot be bookmarked.</li>
+                </ul>
+                <br><img src="form_post.jpg">
+            </fieldset>
+            <br>
+            <fieldset >
+                <legend ><b><h3>3.Target attribute</h3></b></legend>
+                The target attribute specifies where to display the response that is received after submitting the form.
+                <br><br>The target attribute can have one of the following values:
+                <table>
+                    <tr>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>_blank</td>
+                        <td>The response is displayed in new window or tab</td>
+                    </tr>
+                    <tr>
+                        <td>_self</td>
+                        <td>The response is displayed in current window or tab</td>
+                    </tr>
+                    <tr>
+                        <td>_parent</td>
+                        <td>The response is displayed in parent frame</td>
+                    </tr>
+                    <tr>
+                        <td>_top</td>
+                        <td>The response is displayed in full body of  window or tab</td>
+                    </tr>
+                    <tr>
+                        <td>framename</td>
+                        <td>The response is displayed in named iframe</td>
+                    </tr>
+                </table>
+                <h4>Note:</h4>
+                <ul style="color: red;">
+                    <li>Frames and framesets are not supported in HTML5, so the <b>_parent, _top and framename</b> values are now mostly used with iframes.</li>
+                    <li>The default value is <b>_self</b> which means that the response will open in the current window.</li>
+                </ul>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend ><b><h3>4.Autocomplete attribute</h3></b></legend>
+                The autocomplete attribute specifies whether a form should have autocomplete on or off. When autocomplete is on, the browser automatically complete values based on values that the user has entered before.
+                <br><img src="form_autocomplele.jpg" width="450">
+            </fieldset>
+
+            <fieldset>
+                <legend ><b><h3>5.Novalidate attribute</h3></b></legend>
+                The novalidate attribute in HTML is used to signify that the form won’t get validated on submit. It is a Boolean attribute and useful if you want the user to save the progress of form filing. If the form validation is disabled, the user can easily save the form and continue & submit the form later. While continuing, the user does not have to first validate all the entries. For eg. If you will add text in the <b>input type=”number” </b> field, then it won’t show an error
+                <br><img src="form_novalidate.jpg" width="520">
+            </fieldset>
+
+            <fieldset>
+            <legend ><b><h3>6.Name attribute</h3></b></legend>
+            The name attribute specifies the name of a form. The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.
+            
+            <br><p><b>ATTRIBUTE SUMMARY</b><br><img src="form_summary.jpg" width="680"></p>
+             </fieldset>
+        </section>
+
+
+        
+
+
+
+        <!--                                       META TAGS                                -->
+        <b><h3 style="color:white;background-color: black; text-align:center;"><a id="meta_link">META TAGS</a></h3></b>
+        The <b>meta</b> tag defines metadata about an HTML document. Metadata is <b>data (information) about data.</b><br>
+        The <b>meta</b> tags always go inside the <b>head</b> element, and are typically used to specify <b>character set, page description, keywords, author of the document, and viewport settings.</b>
+        <br><b><p>Metadata will not be displayed on the page, but is machine parsable.</p></b>
+        <h3><U>SETTING THE VIEWPORT</U></h3>
+        The viewport is the <b>user's visible area of a web page</b>. It varies with the device - it will be smaller on a mobile phone than on a computer screen. You should include the following <b>meta</b> element in all your web pages:
+        <br><img src="meta_width.jpg">
+        <p>The <b style="color: red;">width=device-width</b> part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+        <br>The <b style="color: red;">initial-scale=1.0</b> part sets the initial zoom level when the page is first loaded by the browser.</p>
+        <h3> More example</h3> 
+        <ul>
+            <li>Define keywords for search engines:<br>
+                <img src="meta_keywords.jpg">
+            </li>
+            <li>Define a description of your web page:<br>
+                <img src="meta_description.jpg">
+            </li>
+            <li>
+                Define the author of a page:<br>
+                <img src="meta_author.jpg">
+            </li>
+            <li>
+                Refresh document every 30 seconds:<br>
+                <img src="meta_refresh.jpg">
+            </li>
+        </ul>   
+        
+        <b><h3 style="color:white;background-color: black; text-align:center;">..END..</h3></b>
+        
+        
+</body>
+
+</html>
+
+
+
+
